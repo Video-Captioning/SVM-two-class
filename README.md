@@ -1,7 +1,7 @@
 EXAMPLE of
    Classification using Support Vector Machines 
 
-```Bash
+```R
 # ----- Load the functions to use for this analysis -----
 require( purrr )
 libraries <- list( 'SVM_functions', 'SVM_classify_one_set' )
