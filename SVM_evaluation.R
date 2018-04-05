@@ -58,7 +58,8 @@ qplot(
   , Sec/60
   , data=x
   , shape=Bins, color=Frac
-  , facets=Cells~Bins, size=I(3),
+  , facets=Cells~Bins, size=I(3)
+  , main='Accuracy vs. Time to Classify'
   , xlab="AUC"
   , xlim=c(0,1)
   , ylab="Time [Minutes]"
