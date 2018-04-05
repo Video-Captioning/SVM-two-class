@@ -79,7 +79,7 @@ save_as <- function( data, fname, path = BASE_PATH ){
   )
 }
 
-# Add a row of inforation to an existing data frame,
+# Add a row of information to an existing data frame,
 # populating descr[iption] and value in the first two columns
 add_row <- function( df, descr, value ){
   new_index <- 1 + nrow( df )
