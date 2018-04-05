@@ -9,8 +9,8 @@ EXAMPLE of
 # ----- Load the functions to use for this analysis -----
 require( purrr )
 libraries <- list( 'SVM_functions', 'SVM_classify_one_set' )
-LIBRARY_PATH <- '~/Dropbox/Projects/Video-Captioning/'
-DATA_PATH    <- LIBRARY_PATH
+LIBRARY_PATH <- '/path/to/repository'
+DATA_PATH    <- '/path/to/data/'
 libraries %>%
   map_chr( .f= ~paste0( LIBRARY_PATH, .x, '.R' )) %>%
   walk( source )
