@@ -1,6 +1,7 @@
-# EXAMPLE of
-#   Classification using Support Vector Machines 
+EXAMPLE of
+   Classification using Support Vector Machines 
 
+```Bash
 # ----- Load the functions to use for this analysis -----
 require( purrr )
 libraries <- list( 'SVM_functions', 'SVM_classify_one_set' )
@@ -38,3 +39,4 @@ BATCHES <- list(
 
 # ----- Process the data sets ----------------------------
 map2( DATA_PATH, BATCHES, ~SVM_classify_one_set( .x, .y ))
+```
