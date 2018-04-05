@@ -1,4 +1,4 @@
-SVM_classify_a_batch <- function( path=DATA_PATH, batch=BATCH ){
+SVM_classify_one_set <- function( path=DATA_PATH, batch=BATCH ){
 
   # ----- Get the data ------------------------------------
   cat( sprintf( 'Getting data...\n' ))
