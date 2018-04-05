@@ -59,7 +59,7 @@ qplot(
   , data=x
   , shape=Bins, color=Frac
   , facets=Cells~Bins, size=I(3)
-  , main='Accuracy vs. Time to Classify'
+  , main='Accuracy vs. Time to Classify\nfor combinations of cells, bins, and training rows'
   , xlab="AUC"
   , xlim=c(0,1)
   , ylab="Time [Minutes]"
