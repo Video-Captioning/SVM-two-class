@@ -1,6 +1,6 @@
 # ----- Load the functions to use for this analysis -----
 require( purrr )
-libraries <- list( 'SVM_two_class_functions', 'SVM_classify_one_set' )
+libraries <- list( 'SVM_functions', 'SVM_classify_one_set' )
 LIBRARY_PATH <- '~/Dropbox/Projects/Video-Captioning/'
 DATA_PATH    <- LIBRARY_PATH
 libraries %>%
