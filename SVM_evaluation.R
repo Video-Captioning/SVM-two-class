@@ -1,6 +1,7 @@
 require( ggplot2 )
 
-x <- read.csv( 'scores.txt', header=TRUE,sep='|' )
+SCORES <- '/path/to/scores'
+x <- read.csv( file = SCORES, header=TRUE,sep='|' )
 x$recs <- sum(x[,c(2:5)])
 x$rate <- x$recs/x$Sec
 #x[order(x$rate),]
