@@ -1,8 +1,6 @@
-BATCH <- 'disc40/cells9_bins9/'
-
 # ----- Load the functions to use for this analysis -----
 require( purrr )
-libraries <- list( 'SVM_two_class_functions', 'SVM_two_class_script' )
+libraries <- list( 'SVM_two_class_functions', 'SVM_classify_one_set' )
 LIBRARY_PATH <- '~/Dropbox/Projects/Video-Captioning/'
 DATA_PATH    <- LIBRARY_PATH
 libraries %>%
@@ -10,8 +8,7 @@ libraries %>%
   walk( source )
 # -------------------------------------------------------
 
-classify_these( DATA_PATH, batch = BATCH )
-
+# ----- Describe which data sets to process -------------
 BATCHES <- list(
     'disc40/cells4_bins9/'
   , 'disc40/cells5_bins9/'
@@ -26,4 +23,6 @@ BATCHES <- list(
   , 'disc50/cells8_bins9/'
   , 'disc50/cells9_bins9/'
 )
-map2( DATA_PATH, BATCHES, ~classify_these( .x, .y ))
+
+# ----- Process the data sets ----------------------------
+map2( DATA_PATH, BATCHES, ~SVM_classify_one_set( .x, .y ))
