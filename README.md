@@ -1,6 +1,10 @@
 EXAMPLE of
    Classification using Support Vector Machines 
 
+1. Clone this repository
+2. Edit the R code, below, so LIBRARY_PATH and DATA_PATH point to the correct locations and BATCHES describes subdirectories of the DATA_PATH
+3. Run the revised R code.
+
 ```R
 # ----- Load the functions to use for this analysis -----
 require( purrr )
