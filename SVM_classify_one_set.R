@@ -59,5 +59,4 @@ SVM_classify_one_set <- function( path=DATA_PATH, batch=BATCH ){
   )
 
   save_as( data = fit_summary, fname = 'summary.csv', path = BASE_PATH )
-  paste0( BASE_PATH, fname )
 }
