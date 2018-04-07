@@ -16,7 +16,7 @@ SVM_classify_one_set <- function( path=DATA_PATH, batch=BATCH ){
   # ----- Optimize cost parameter, C ----------------------
   benchmark <- microbenchmark::microbenchmark(
       models <- optimize_cost(
-        range_lists = list(
+        values_of_C_to_try = list(
           cost = c( 0.001, 0.01, 0.1, 1 )
         )
         , test_data = test.data
