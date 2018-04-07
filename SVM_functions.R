@@ -33,15 +33,15 @@ load_and_label <- function( y, fname ){
 
 # Optimize cost parameter, C,
 # by training an SVM classifier using each of the
-# C-values given in input, range_lists
-optimize_cost <- function( range_lists, test_data ){
+# C-values given in input, values_of_C_to_try
+optimize_cost <- function( values_of_C_to_try, test_data ){
   cat( sprintf( 'Finding optimal cost...\n' ))
   e1071::tune(
       e1071::svm
     , y~.
     , data   = test_data
     , kernel = 'linear'
-    , ranges = range_lists
+    , ranges = values_of_C_to_try
   )
 }
 
